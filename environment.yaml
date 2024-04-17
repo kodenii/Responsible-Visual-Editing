@@ -1,0 +1,14 @@
+name: coeditor
+channels:
+  - pytorch
+  - defaults
+  - nvidia
+dependencies:
+  - python=3.10.13
+  - pip
+  - pytorch=2.1.2
+  - torchvision=0.16.2
+  - pip:
+    - git+https://github.com/facebookresearch/segment-anything.git
+    - git+https://github.com/UX-Decoder/Semantic-SAM.git@package
+    - diffusers==0.23.0

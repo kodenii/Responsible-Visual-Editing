@@ -1,0 +1,5 @@
+{
+    "knowledge extraction":"You will be given a concept and describe it. Detailed steps is as following:\n1.give several descriptions and traits of concept: {concept}\n2.choose the best one as the result and the result must be easy to understand and short\n3.show your results with the format of Python list whose last member is the best definition you choose",
+    "focus generation":"{knowledge}Please regard any non-human as human if necessary.Please point out any elements related to {concept} according to this definition and your knowledge with a format of Python list of number with no comments and note do not bigger than maximum marked number.Note don't include background",
+    "modification generation":"The following is a {task_name} task.\nThe task description is to {goal}. The detailed procedures is: \n{steps}"
+}

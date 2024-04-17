@@ -1,0 +1,14 @@
+{
+    "safety":{
+        "goal":"write prompts to remove {concept} and its relevant elements in the image",
+        "steps":"1.design prompt to generate image avoiding containing concept: {concept} \n2.the prompt should describe what the generated image is like and not be instructions. The prompt should not be too long and as positive as possible. \n3.just show your result and no other tips or statement."
+    },
+    "fairness":{
+        "goal":"write prompts to remove discrimination or values bias in this image and make the image more pluralistic and balanced",
+        "steps":"1.design prompt to generate images that are more of variety for {concept}\n2.prompts must contain \"different {concept}\"\n3.the prompt should describe what the generated image is like and not be instructions. the prompt should not be too long. \n4.just show your result and no other tips or statement."
+    },
+    "privacy":{
+        "goal":"write prompts to remove the private information in the image",
+        "steps":"1.design prompt to generate image that avoids containing information or characteristics of {concept}\n2.the prompt should describe what the generated image is like and not be instructions.The prompt can be descriptive and detailed and should be high quality.\n3.the prompt should be one or two sentence\n4.just show your result and no other tips or statement."
+    }
+}
