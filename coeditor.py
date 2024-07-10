@@ -29,8 +29,8 @@ import matplotlib.colors as mcolors
 from rve_toolkits import PCP,BCP
 from argparse import ArgumentParser
 
-css4_colors = mcolors.CSS4_COLORS
-color_proposals = [list(mcolors.hex2color(color)) for color in css4_colors.values()]
+
+
 
 
 
@@ -62,17 +62,17 @@ def inference(image, slider, mode, alpha, label_mode, anno_mode, text_size=640, 
     else:
         if mode == 'Automatic':
             model_name = 'semantic-sam'
-            if slider < 1.5 + 0.14:                
+            if slider < 1.64:                
                 level = [1]
-            elif slider < 1.5 + 0.28:
+            elif slider < 1.78:
                 level = [2]
-            elif slider < 1.5 + 0.42:
+            elif slider < 1.92:
                 level = [3]
-            elif slider < 1.5 + 0.56:
+            elif slider < 2.06:
                 level = [4]
-            elif slider < 1.5 + 0.70:
+            elif slider < 2.2:
                 level = [5]
-            elif slider < 1.5 + 0.84:
+            elif slider < 2.34:
                 level = [6]
             else:
                 level = [6, 1, 2, 3, 4, 5]
@@ -143,4 +143,4 @@ if __name__=="__main__":
     edited_image = Image.fromarray(edited_image)
 
     os.makedirs(args.output_dir, exist_ok=True)
-    edited_image.save(os.path.join(args.output_dir, args.image))
+    edited_image.save(os.path.join(args.output_dir, os.path.basename(args.image)))

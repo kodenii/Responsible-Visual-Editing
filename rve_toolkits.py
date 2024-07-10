@@ -99,17 +99,17 @@ def Mask_Reorder(image, masks, label_mode, alpha, anno_mode):
 def get_dilate_num(x):
     if x<1.5:
          dilate_num = -500*(x-1.36)+85 
-    if x < 1.5 + 0.14:                
+    elif x < 1.64:                
         dilate_num = -500*(x-1.5)+85 
-    elif x < 1.5 + 0.28:
+    elif x < 1.78:
         dilate_num = -500*(x-1.64)+85 
-    elif x < 1.5 + 0.42:
+    elif x < 1.92:
         dilate_num = -500*(x-1.78)+85 
-    elif x < 1.5 + 0.56:
+    elif x < 2.06:
         dilate_num = -500*(x-1.92)+85 
-    elif x < 1.5 + 0.70:
+    elif x < 2.2:
         dilate_num = -500*(x-2.06)+85 
-    elif x < 1.5 + 0.84:
+    elif x < 2.34:
         dilate_num = -500*(x-2.20)+85 
     elif x<2.5:
         dilate_num = -500*(x-2.34)+85 

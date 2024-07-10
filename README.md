@@ -9,7 +9,8 @@ Official pytorch implementation of "Responsible Visual Editing".
 
 ## Updates
 
-- [4/17] 🔥We released the CoEditor on Github.
+- [7/10] 🔥Our paper is accepted by ECCV2024!
+- [4/17] We released the CoEditor on Github.
 
 ## Overview of CoEditor
 
@@ -74,7 +75,7 @@ python coeditor.py --concept alcohol --image examples/safety-alcohol-eg0.png --t
 
 ## Dataset
 
-We are about to release our dataset.
+Please download our dataset via this [link](https://drive.google.com/file/d/1JvsLRQnoYimfKiNpYixTfWJs6eJQegc2/view?usp=share_link).
 
 ## Citation
 
